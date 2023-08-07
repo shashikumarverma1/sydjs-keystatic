@@ -20,7 +20,9 @@ export const organiserListBlock = component({
   preview: (props) => (
     <ul>
       {props.fields.content.elements.map((el) => (
-        <li key={el.key}>{el.fields.organiser.value}</li>
+        <li key={el.key}>
+          {el.fields.organiser.value}
+          </li>
       ))}
     </ul>
   ),

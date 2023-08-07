@@ -7,6 +7,7 @@ import events from './schema/collections/events'
 import talks from './schema/collections/talks'
 import persons from './schema/collections/persons'
 import sponsors from './schema/collections/sponsors'
+import tikku from './schema/collections/tikku'
 
 // Storage strategy
 const storage: LocalConfig['storage'] | GitHubConfig['storage'] =
@@ -27,6 +28,7 @@ export default config({
     events,
     talks,
     persons,
+    tikku
     // sponsors,
   },
   singletons: {

@@ -1,11 +1,9 @@
 import { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import { reader } from '@/app/keystatic/reader'
-
 import '@/styles/globals.css'
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
-
 import {
   sharedOpenGraphMetadata,
   sharedTwitterMetadata,
@@ -13,10 +11,8 @@ import {
 
 export async function generateMetadata(): Promise<Metadata> {
   const admin = await reader.singletons.admin.read()
-
   const title = admin?.siteTitle || ''
   const description = admin?.siteDescription || ''
-
   return {
     // TODO: Replace with the URL below before switching DNS servers
     metadataBase: new URL('https://sydjs-keystatic.vercel.app/'),

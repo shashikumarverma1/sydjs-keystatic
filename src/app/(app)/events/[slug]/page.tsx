@@ -95,7 +95,7 @@ const EventTalk = asyncComponent(async function EventTalk(props: {
   return (
     <li className="grid gap-8 lg:grid-cols-3">
       <div className="lg:col-span-2">
-        <h3 className="text-3xl font-bold">{talk.name}</h3>
+        {/* <h3 className="text-3xl font-bold">{talk.name}</h3> */}
         <ul className="mt-3 flex flex-wrap gap-x-10 gap-y-4">
           {talk.speakers &&
             talk.speakers

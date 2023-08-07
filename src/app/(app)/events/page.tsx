@@ -29,6 +29,7 @@ export default async function AllEvents() {
   const isLastEventInTheFuture = isFuture(
     new Date(futureEvents[futureEvents.length - 1].date)
   )
+  // console.log(futureEvents?.length)
   return (
     <>
       <div className="mx-auto mt-24 max-w-6xl px-6">
