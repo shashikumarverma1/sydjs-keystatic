@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="w-full overflow-x-hidden">
       {/* Hero section */}
-      <div className="relative mx-auto grid max-w-6xl px-6 lg:grid-cols-2 lg:pl-8 lg:pr-0">
+      <div className="relative mx-auto grid max-w-5xl px-6 lg:grid-cols-2 lg:pl-8 lg:pr-0">
         <div className="py-8 lg:py-40">
           <Header />
           <p className="mt-10 text-lg">Thanks to our long standing sponsors:</p>

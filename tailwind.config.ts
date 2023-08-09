@@ -26,9 +26,22 @@ const config = {
         default: '#000000',
         subtle: '#313131',
         placeholder: '#616161',
+        headerblue:'#262f5a',
+        headeryellow:'#ff5c00'
       },
       spacing: {
         18: '4.5rem',
+      },theme: {
+        fontSize: {
+          sm: '0.8rem',
+          base: '1rem',
+          xl: '1.25rem',
+          '2xl': '1.563rem',
+          '3xl': '1.953rem',
+          '4xl': '2.441rem',
+          '5xl': '3.052rem',
+          headerFontSize:15
+        }
       },
       fontFamily: {
         sans: ['var(--font-poppins)', ...fontFamily.sans],

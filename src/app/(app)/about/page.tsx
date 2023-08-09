@@ -8,6 +8,7 @@ import {
   sharedOpenGraphMetadata,
   sharedTwitterMetadata,
 } from '@/lib/shared-metadata'
+import { Card } from '@/components/Card'
 
 const metaTitleAndDescription = {
   title: 'About',
@@ -47,11 +48,12 @@ export default async function Page() {
   ).aboutPage()
   return (
     <div className="prose mx-auto mt-20 max-w-4xl px-6 lg:prose-lg">
-      <h1 className="text-5xl font-bold sm:text-6xl">About SydJS</h1>
-      <DocumentRenderer
+      <h1 className="text-xl font-bold sm:text-xl">About SydJS</h1>
+      <Card/>
+      {/* <DocumentRenderer
         document={aboutPage}
         componentBlocks={componentBlocksRenderer}
-      />
+      /> */}
     </div>
   )
 }
